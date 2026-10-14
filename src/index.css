@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --sst-green: #39A900;
+    --sst-green-dark: #2d8200;
+    --sst-orange: #f97316;
+    --sst-yellow: #f59e0b;
+    --sst-blue: #0284c7;
+    --sst-red: #dc2626;
+  }
+}
+
+/* Background SST Industrial & Safety Grid Pattern */
+.bg-sst-pattern {
+  background-color: #f1f5f9;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(57, 169, 0, 0.08) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(249, 115, 22, 0.08) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(2, 132, 199, 0.06) 0px, transparent 50%),
+    linear-gradient(to right, rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 32px 32px, 32px 32px;
+}
+
+/* Safety Diagonal Chevron Warning Stripe Banner (Amarillo y Negro Técnico) */
+.safety-stripe-banner {
+  background: repeating-linear-gradient(
+    -45deg,
+    #f59e0b,
+    #f59e0b 12px,
+    #1e293b 12px,
+    #1e293b 24px
+  );
+}
+
+.safety-stripe-green {
+  background: repeating-linear-gradient(
+    -45deg,
+    #39A900,
+    #39A900 10px,
+    #00324D 10px,
+    #00324D 20px
+  );
+}
+
+/* Ultra Tactile SST Buttons */
+.btn-sst-green {
+  background: linear-gradient(135deg, #39A900 0%, #2e8b00 100%);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 4px 14px 0 rgba(57, 169, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-sst-green:hover {
+  background: linear-gradient(135deg, #42bd02 0%, #349c00 100%);
+  box-shadow: 0 6px 20px 0 rgba(57, 169, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transform: translateY(-1.5px);
+}
+.btn-sst-green:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px 0 rgba(57, 169, 0, 0.4);
+}
+
+.btn-sst-orange {
+  background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 4px 14px 0 rgba(234, 88, 12, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-sst-orange:hover {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  box-shadow: 0 6px 20px 0 rgba(234, 88, 12, 0.48), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transform: translateY(-1.5px);
+}
+.btn-sst-orange:active {
+  transform: translateY(1px);
+}
+
+.btn-sst-yellow {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #0f172a;
+  font-weight: 800;
+  box-shadow: 0 4px 14px 0 rgba(245, 158, 11, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-sst-yellow:hover {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  box-shadow: 0 6px 20px 0 rgba(245, 158, 11, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  transform: translateY(-1.5px);
+}
+.btn-sst-yellow:active {
+  transform: translateY(1px);
+}
+
+.btn-sst-blue {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 4px 14px 0 rgba(2, 132, 199, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-sst-blue:hover {
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+  box-shadow: 0 6px 20px 0 rgba(2, 132, 199, 0.45);
+  transform: translateY(-1.5px);
+}
+.btn-sst-blue:active {
+  transform: translateY(1px);
+}
+
+.btn-sst-navy {
+  background: linear-gradient(135deg, #00324D 0%, #001f30 100%);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 4px 12px 0 rgba(0, 50, 77, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-sst-navy:hover {
+  background: linear-gradient(135deg, #00456a 0%, #00283e 100%);
+  box-shadow: 0 6px 18px 0 rgba(0, 50, 77, 0.4);
+  transform: translateY(-1.5px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(57, 169, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(57, 169, 0, 0.8);
+  }
+}
+
+.animate-pulseGlow {
+  animation: pulseGlow 2s infinite;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white !important;
+  }
+  header, footer, nav, button, .no-print {
+    display: none !important;
+  }
+  #certificado-oficial-print {
+    box-shadow: none !important;
+    border-width: 2px !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    page-break-inside: avoid;
+  }
+}
